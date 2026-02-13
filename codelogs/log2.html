@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,10 +20,122 @@
 		// in-page JavaScript here
 	</script>
 
+
 </head>
+
 <body>
 
-	<h1>Code Log 2: CSS Measuring Units</h1>>
+<header>
+	<h1> Code Log 2: CSS Measuring Units</h1>
+</header>
+
+<main>
+
+<section>
+	<h2>Absolute vs. Relative CSS Length Units</h2>
+
+	<p>
+	When working in CSS, it’s important to understand the difference between absolute and relative units. 
+	Absolute units are fixed. That means they do not change based on screen size, parent elements, or user settings. 
+	Examples include <code>px</code> and <code>pt</code>. These units try to stay the same size no matter what.
+	</p>
+
+	<p>
+	Relative units, on the other hand, are based on something else. They adjust depending on the font size, 
+	the root element, or even the size of the browser window. Examples include <code>em</code>, 
+	<code>rem</code>, <code>vw</code>, and <code>vh</code>. Relative units are extremely useful for responsive design 
+	because they scale naturally across devices. In modern web development, relative units are often preferred 
+	because they improve flexibility and accessibility.
+	</p>
+</section>
+
+<section>
+	<h2>1. px and pt</h2>
+
+	<p>
+	The <code>px</code> unit stands for pixel. It is the most common unit used in web design. 
+	Even though pixels seem absolute, they are actually CSS pixels, meaning they are adjusted 
+	by the browser to look consistent across different devices. Pixels are good for borders, 
+	icons, and small layout details.
+	</p>
+
+	<p>
+	The <code>pt</code> unit stands for point. It is mostly used in print design. 
+	One point equals 1/72 of an inch. On screens, it is less common and not recommended 
+	for responsive layouts.
+	</p>
+
+	<textarea>
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 24pt;
+}
+	</textarea>
+</section>
+
+<section>
+	<h2>2. em and rem</h2>
+
+	<p>
+	The <code>em</code> unit is relative to the font size of its parent element. 
+	If a parent has a font size of 20px, then 1em equals 20px. 
+	This can sometimes cause compounding effects when elements are nested.
+	</p>
+
+	<p>
+	The <code>rem</code> unit stands for "root em." It is relative to the root 
+	HTML element’s font size instead of the parent. This makes it more predictable 
+	and easier to control in larger layouts. Many developers prefer <code>rem</code> 
+	for consistent typography.
+	</p>
+
+	<textarea>
+html {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2em;
+}
+	</textarea>
+</section>
+
+<section>
+	<h2>3. vw and vh</h2>
+
+	<p>
+	The <code>vw</code> unit stands for viewport width. One <code>vw</code> equals 
+	1% of the browser window’s width. The <code>vh</code> unit stands for viewport height, 
+	and 1vh equals 1% of the browser window’s height.
+	</p>
+
+	<p>
+	These units are especially useful for full-screen layouts, hero sections, 
+	and responsive typography that scales with screen size. However, they should 
+	be used carefully on mobile devices because browser toolbars can affect 
+	the viewport height.
+	</p>
+
+	<textarea>
+.hero {
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5vw;
+}
+	</textarea>
+</section>
+
+</main>
 
 </body>
 </html>
