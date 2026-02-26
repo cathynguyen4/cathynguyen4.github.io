@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tags and title -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Media Queries</title>
+
+  <!-- external and internal CSS -->
+  <link rel="stylesheet" href="styles.css" media="all">
+  <style>
+    /* in-file CSS here (optional) */
+    textarea { 
+      display: block; 
+      width: 100%;
+      min-height: 140px;
+      margin: 12px 0 20px 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.95rem;
+    }
+  </style>
+
+  <!-- external and internal JavaScript -->
+  <script src="scripts.js" defer></script>
+</head>
+
+<body>
+  <h1>CSS Media Queries</h1>
+
+  <h2>How does a CSS media query work, and why is it useful?</h2>
+  <p>
+    A CSS media query is a rule that lets your website apply different CSS styles depending on the user’s device
+    or screen conditions. The browser checks the media query’s condition (like the screen width, orientation,
+    or user preferences), and if the condition is true, it uses the CSS inside that media query block.
+  </p>
+  <p>
+    Media queries are useful because they help you build responsive websites that still look good and feel usable
+    on different devices (phones, tablets, laptops, big monitors). Instead of making separate websites, you can keep
+    one website and adjust the layout, font sizes, spacing, and navigation based on the screen or device.
+  </p>
+
+  <h2>Four media features supported by media queries (and what they do)</h2>
+
+  <h2>1) <code>max-width</code></h2>
+  <p>
+    <code>max-width</code> targets screens up to a certain width. This is commonly used for “mobile styles,” because
+    it applies when the screen is small enough. For example, you can stack columns into a single column when the
+    screen is 600px or less.
+  </p>
+  <textarea readonly>
+/* Applies when the viewport is 600px wide or smaller */
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+
+  .columns {
+    display: block;
+  }
+}
+  </textarea>
+
+  <h2>2) <code>min-width</code></h2>
+  <p>
+    <code>min-width</code> targets screens starting at a certain width and larger. This is often used for “desktop
+    enhancements,” like adding multi-column layouts, increasing spacing, or showing extra navigation options when
+    there’s more room.
+  </p>
+  <textarea readonly>
+/* Applies when the viewport is 900px wide or larger */
+@media (min-width: 900px) {
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+  </textarea>
+
+  <h2>3) <code>orientation</code></h2>
+  <p>
+    <code>orientation</code> checks whether the device is in portrait or landscape mode. This is helpful for tablets
+    and phones where rotating the screen changes the available horizontal space a lot. You can adjust sizes and
+    layout based on how the device is being held.
+  </p>
+  <textarea readonly>
+/* Applies when the device is in landscape orientation */
+@media (orientation: landscape) {
+  .hero {
+    min-height: 60vh;
+  }
+}
+  </textarea>
+
+  <h2>4) <code>prefers-reduced-motion</code></h2>
+  <p>
+    <code>prefers-reduced-motion</code> is based on a user accessibility setting in their operating system. If the user
+    prefers less motion (to avoid dizziness or discomfort), you can reduce or remove animations and smooth scrolling.
+    This improves accessibility and shows good design practice.
+  </p>
+  <textarea readonly>
+/* Reduce motion for users who request it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+  </textarea>
+
+  <h2>Extra example: combining features</h2>
+  <p>
+    You can combine media features using <code>and</code>. This example applies only on small screens in portrait mode
+    (like a phone held upright).
+  </p>
+  <textarea readonly>
+@media (max-width: 500px) and (orientation: portrait) {
+  nav ul {
+    display: block;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+  }
+}
+  </textarea>
+
+</body>
+</html>
