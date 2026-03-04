@@ -1,0 +1,94 @@
+/* TP3: Anni Albers layouts (text only, black on white, Times) */
+
+html, body {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	color: #000;
+	font-family: "Times New Roman", Times, serif;
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.55;
+	margin: 0 0 16px 0;
+}
+
+h1 {
+	font-size: 44px;
+	font-weight: 700;
+	margin: 0 0 8px 0;
+	line-height: 1.1;
+}
+
+h2 {
+	font-size: 22px;
+	font-weight: 700;
+	margin: 28px 0 12px 0;
+}
+
+.meta {
+	font-size: 16px;
+	margin: 0 0 18px 0;
+}
+
+.callout {
+	font-size: 34px;
+	line-height: 1.2;
+	margin: 28px 0 28px 0;
+}
+
+.smallcaps {
+	font-variant: small-caps;
+	letter-spacing: 0.04em;
+	font-size: 16px;
+	margin: 0 0 10px 0;
+}
+
+.note {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+.footer {
+	font-size: 14px;
+	margin: 28px 0 0 0;
+}
+
+/* ---------- Layout 1 (index.html): CSS GRID 6 columns ---------- */
+.grid6 {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 42px 28px;
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	column-gap: 26px;
+	row-gap: 18px;
+}
+
+/* Span helpers */
+.span6 { grid-column: span 6; }
+.span4 { grid-column: span 4; }
+.span2 { grid-column: span 2; }
+
+.about {
+	margin-top: 18px;
+}
+
+/* ---------- Layout 2 (index2.html): HTML TABLE 6 columns ---------- */
+#secondLayout .layoutTable {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+#secondLayout td {
+	vertical-align: top;
+	padding: 42px 28px;
+}
+
+#secondLayout .cell {
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
