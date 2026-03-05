@@ -11,3 +11,25 @@ header{
   width: 100%;
   height: 100vh;
 }
+
+#rhodiePicture {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("Pacific\ Rhododendron\ 2\ -\ Gary\ Monroe-1.jpg");
+  background-size: cover; 
+
+}
+
+#rhodieTitle {
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+}
+
+#rhodieTitle h1{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+}
