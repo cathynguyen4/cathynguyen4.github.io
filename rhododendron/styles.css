@@ -40,10 +40,8 @@ header {
   #rhodieTitle{
       width: 50vw;
       left: 50vw;
-    background-color: darkgray;
-  
-  }
-#rhodieTitle h1 {
+      background-color: darkgray
+   }
+#rhodieTitle h1{
   width: 45 vw;
-  
-}
+  }
