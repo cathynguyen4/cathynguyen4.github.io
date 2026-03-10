@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- meta tags and title -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Images</title>
+
+	<!-- external and internal CSS -->
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 20px;
+			max-width: 900px;
+		}
+
+		h1, h2 {
+			color: #222;
+		}
+
+		section {
+			margin-bottom: 30px;
+		}
+
+		pre {
+			background-color: #f4f4f4;
+			padding: 10px;
+			border: 1px solid #ccc;
+			overflow-x: auto;
+		}
+
+		code {
+			font-family: monospace;
+		}
+	</style>
+
+	<!-- external and internal JavaScript -->
+	<script>
+		// in-page JavaScript here
+	</script>
+
+</head>
+<body>
+
+	<h1>Images</h1>
+
+	<section>
+		<p>
+			Images are used in web design to make pages more interesting, informative, and visually appealing.
+			In HTML, images can be added directly with the <code>&lt;img&gt;</code> tag. In CSS, images can
+			also be used as background images for elements like sections, headers, or boxes.
+		</p>
+	</section>
+
+	<section>
+		<h2>Images in HTML</h2>
+		<p>
+			The <code>&lt;img&gt;</code> tag is used when an image is part of the actual content of the page.
+			For example, a photo, logo, chart, or product image would usually be added with
+			<code>&lt;img&gt;</code>. It appears in the HTML itself and can include alt text for accessibility.
+		</p>
+
+<pre><code>&lt;img src="flower.jpg" alt="Pink flower" width="300"&gt;</code></pre>
+	</section>
+
+	<section>
+		<h2>Images in CSS</h2>
+		<p>
+			A background image is added with CSS using the <code>background-image</code> property.
+			This is usually better when the image is decorative and not the main content of the page.
+			For example, a banner image or textured section background would often be added with CSS.
+		</p>
+
+<pre><code>.banner {
+  background-image: url("forest.jpg");
+  background-size: cover;
+  background-position: center;
+}</code></pre>
+	</section>
+
+	<section>
+		<h2>Difference Between &lt;img&gt; and background-image</h2>
+		<p>
+			The <code>&lt;img&gt;</code> tag places an image directly into the page as content, while
+			<code>background-image</code> places an image behind an element as part of its design.
+		</p>
+
+		<p>
+			In terms of code, <code>&lt;img&gt;</code> is written in HTML, while
+			<code>background-image</code> is written in CSS.
+		</p>
+
+		<p>
+			In terms of functionality and layout, an <code>&lt;img&gt;</code> element takes up space on the
+			page as its own object, while a background image stays inside the box of another element.
+			The <code>&lt;img&gt;</code> tag is also better for meaningful images because it supports
+			<code>alt</code> text. Background images are usually more decorative.
+		</p>
+	</section>
+
+	<section>
+		<h2>Other CSS Properties for Background Images</h2>
+		<p>
+			Besides <code>background-image</code>, other CSS properties also affect how background images display.
+		</p>
+
+		<p>
+			<strong>background-size</strong> controls the size of the image. For example,
+			<code>cover</code> makes the image fill the whole element.
+		</p>
+
+		<p>
+			<strong>background-repeat</strong> controls whether the image repeats or only shows once.
+			For example, <code>no-repeat</code> prevents tiling.
+		</p>
+
+		<p>
+			<strong>background-position</strong> controls where the image appears inside the element,
+			such as center, top, or bottom.
+		</p>
+
+<pre><code>.box {
+  background-image: url("leaves.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}</code></pre>
+	</section>
+
+	<section>
+		<h2>Dimensions vs. Resolution</h2>
+		<p>
+			Dimensions are the width and height of a bitmap image in pixels, while resolution refers to how much detail the image contains or how densely those pixels are displayed.
+		</p>
+	</section>
+
+	<section>
+		<h2>Image File Formats</h2>
+		<p>
+			GIF, PNG, JPG/JPEG, WebP, and SVG are all image formats, but they are designed for different uses.
+		</p>
+
+		<p>
+			<strong>GIF</strong> supports simple animation, but it has limited color quality, so it is not the best choice for detailed photos.
+		</p>
+
+		<p>
+			<strong>PNG</strong> supports lossless quality and transparency, which makes it a good choice for logos, graphics, and screenshots.
+		</p>
+
+		<p>
+			<strong>JPG/JPEG</strong> is commonly used for photographs because it compresses images well, but it loses some quality when compressed.
+		</p>
+
+		<p>
+			<strong>WebP</strong> is a modern format that usually creates smaller file sizes while still keeping good quality, so it is often very useful for websites.
+		</p>
+
+		<p>
+			<strong>SVG</strong> is different from the others because it is a vector format instead of a bitmap format. That means it can scale up or down without getting blurry, which makes it ideal for icons, logos, and simple illustrations.
+		</p>
+
+		<p>
+			Some formats are better than others depending on the purpose. JPG is usually best for photos, PNG is better for transparent graphics, GIF is useful for simple animations, WebP is great for web performance, and SVG is best for scalable graphics.
+		</p>
+	</section>
+
+</body>
+</html>
