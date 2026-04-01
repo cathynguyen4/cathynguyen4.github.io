@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Shrimp Recipe Minisite</title>
+	<link rel="stylesheet" href="styles.css" media="all">
+	<script src="scripts.js" defer></script>
+</head>
+<body>
+
+	<nav class="site-nav">
+		<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">☰</button>
+
+		<ul id="nav-menu" class="nav-menu">
+			<li><a href="index.html">Home</a></li>
+
+			<li class="has-submenu">
+				<button class="submenu-toggle" aria-expanded="false">My Recipes</button>
+				<ul class="submenu">
+					<li><a href="recipe1.html">Shrimp Scampi</a></li>
+					<li><a href="recipe2.html">Garlic Butter Shrimp</a></li>
+					<li><a href="recipe3.html">Shrimp Tacos</a></li>
+				</ul>
+			</li>
+
+			<li class="has-submenu">
+				<button class="submenu-toggle" aria-expanded="false">Favorite Recipe Sites</button>
+				<ul class="submenu">
+					<li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a></li>
+					<li><a href="https://www.delish.com/" target="_blank">Delish</a></li>
+					<li><a href="https://www.bonappetit.com/" target="_blank">Bon Appétit</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="container">
+		<header class="hero">
+			<div class="hero-text">
+				<h1>My Favorite Shrimp Recipes</h1>
+				<p>
+					Welcome to my shrimp recipe minisite. This site features three easy shrimp recipes
+					that are simple to make and full of flavor.
+				</p>
+				<a class="button-link" href="recipe1.html">Start with Shrimp Scampi</a>
+			</div>
+
+			<img src="farhad-ibrahimzade-ZipYER3NLhY-unsplash (1).jpg" alt="Shrimp dish in a bowl">
+		</header>
+
+		<main>
+			<section class="home-intro">
+				<h2>About These Recipes</h2>
+				<p>
+					These recipes are all centered around shrimp because it is quick to cook,
+					versatile, and works well with many flavors.
+				</p>
+			</section>
+
+			<section class="recipe-grid">
+				<article class="recipe-card">
+					<h3>Shrimp Scampi</h3>
+					<p>A light and flavorful shrimp dish made with garlic, butter, lemon, and white wine.</p>
+					<a class="card-link" href="recipe1.html">View Recipe</a>
+				</article>
+
+				<article class="recipe-card">
+					<h3>Garlic Butter Shrimp</h3>
+					<p>A simple shrimp recipe with a rich garlic butter sauce that pairs well with rice or pasta.</p>
+					<a class="card-link" href="recipe2.html">View Recipe</a>
+				</article>
+
+				<article class="recipe-card">
+					<h3>Shrimp Tacos</h3>
+					<p>A fresh and easy shrimp recipe served in tortillas with cabbage, lime, and toppings.</p>
+					<a class="card-link" href="recipe3.html">View Recipe</a>
+				</article>
+			</section>
+		</main>
+
+		<footer>
+			<p>&copy; Cathy Nguyen. Recipe minisite project.</p>
+		</footer>
+	</div>
+
+</body>
+</html>
