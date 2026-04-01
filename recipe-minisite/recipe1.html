@@ -4,16 +4,41 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Shrimp Scampi</title>
-
 	<link rel="stylesheet" href="styles.css" media="all">
-	<style>
-		/* in-file CSS here */
-	</style>
+	<script src="scripts.js" defer></script>
 </head>
 <body>
 
+	<nav class="site-nav">
+		<button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open navigation menu">
+			☰
+		</button>
+
+		<ul id="nav-menu" class="nav-menu">
+			<li><a href="index.html">Home</a></li>
+
+			<li class="has-submenu">
+				<button class="submenu-toggle" aria-expanded="false">My Recipes</button>
+				<ul class="submenu">
+					<li><a href="recipe1.html">Shrimp Scampi</a></li>
+					<li><a href="recipe2.html">Garlic Butter Shrimp</a></li>
+					<li><a href="recipe3.html">Shrimp Tacos</a></li>
+				</ul>
+			</li>
+
+			<li class="has-submenu">
+				<button class="submenu-toggle" aria-expanded="false">Favorite Recipe Sites</button>
+				<ul class="submenu">
+					<li><a href="https://www.allrecipes.com/" target="_blank">Allrecipes</a></li>
+					<li><a href="https://www.delish.com/" target="_blank">Delish</a></li>
+					<li><a href="https://www.bonappetit.com/" target="_blank">Bon Appétit</a></li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
 	<div class="container">
-		<header>
+		<header class="recipe-header">
 			<h1>Shrimp Scampi</h1>
 			<img src="farhad-ibrahimzade-ZipYER3NLhY-unsplash (1).jpg" alt="Bowl of shrimp scampi">
 			<p class="intro">
@@ -22,7 +47,7 @@
 			</p>
 		</header>
 
-		<main>
+		<main class="recipe-layout">
 			<section class="ingredients">
 				<h2>Ingredients</h2>
 				<ul>
@@ -48,12 +73,7 @@
 		</main>
 
 		<footer>
-			<p>
-				&copy; Cathy Nguyen. Photo by
-				<a href="https://unsplash.com/@ferhadd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Farhad Ibrahimzade</a>
-				on
-				<a href="https://unsplash.com/photos/person-holding-black-ceramic-bowl-with-food-ZipYER3NLhY?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-			</p>
+			<p>&copy; Cathy Nguyen. Recipe minisite project.</p>
 		</footer>
 	</div>
 
