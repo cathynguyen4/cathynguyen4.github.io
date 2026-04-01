@@ -1,0 +1,47 @@
+/* mobile-first design for Pacific Rhododendron layout */
+* { box-sizing: border-box;
+    font-size: Arial, sans-serif; }
+
+body { margin: 0; padding: 0; }
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+#rhodiePicture {
+  position: absolute;
+  inset: 0;
+  background-image: url("Pacific Rhododendron 2 .jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+
+#rhodieTitle {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+}
+
+#rhodieTitle h1 {
+  margin: 0;
+  color: white;
+  font-size: 2.5rem;
+  width: calc(100vw - 2 em);
+  }
+@media screen and (orientation: landscape){
+  #rhodiePicture{
+    width: 50vw;
+    }
+  }
+  #rhodieTitle{
+      width: 50vw;
+      left: 50vw;
+      background-color: darkgray
+   }
+#rhodieTitle h1{
+  width: 45 vw;
+  }
