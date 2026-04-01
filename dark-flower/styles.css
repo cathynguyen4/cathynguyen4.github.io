@@ -1,0 +1,75 @@
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #d8ead0;
+  margin-top: 2rem;
+}
+
+/* Dark mode styles */
+body.darkMode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.darkMode header,
+body.darkMode footer {
+  background-color: #1f2a22;
+}
+
+body.darkMode h1 {
+  color: #d8f5d0;
+}
+
+body.darkMode .card {
+  background-color: #1e1e1e;
+  box-shadow: none;
+}
+
+body.darkMode #darkModeButton {
+  background-color: #d8f5d0;
+  color: #111;
+}
+
+body.darkMode #darkModeButton:hover {
+  background-color: #bfe6b4;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+  .details {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  #darkModeButton {
+    width: 100%;
+  }
+}
