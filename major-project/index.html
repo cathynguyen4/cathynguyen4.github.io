@@ -4,193 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashion Creator UX Guide</title>
+  <title>Home | Fashion Creator UX Guide</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <nav class="navbar">
-        <a class="logo" href="index.html">Fashion Creator UX Guide</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#fashion-ux">Fashion UX</a></li>
-          <li><a href="#strategy">UX Strategy</a></li>
-          <li><a href="#scope">UX Scope</a></li>
-          <li><a href="#tips">Tips</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      
+<nav class="navbar">
+  <a class="logo" href="index.html">Fashion Creator UX Guide</a>
+  <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="fashion-ux.html">Fashion UX</a></li>
+    <li><a href="ux-strategy.html">UX Strategy</a></li>
+    <li><a href="ux-scope.html">UX Scope</a></li>
+    <li><a href="planning-tips.html">Planning Tips</a></li>
+    <li><a href="examples.html">Examples</a></li>
+    <li><a href="branding.html">Branding</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
     </div>
   </header>
-
   <main>
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <p class="eyebrow">Community Resource Site</p>
-          <h1>Where fashion and user experience come together.</h1>
-          <p class="hero-copy">
-            Fashion Creator UX Guide is a beginner-friendly website for students, aspiring designers,
-            and creatives who want to understand how UX design, UX strategy, and UX scope shape
-            fashion websites.
-          </p>
-          <div class="hero-buttons">
-            <a class="button primary" href="#fashion-ux">Start Exploring</a>
-            <a class="button secondary" href="#contact">Ask a Question</a>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="mockup">
-            <div class="mockup-top"></div>
-            <div class="mockup-image">fashion site preview</div>
-            <div class="mockup-lines">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
+    
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Community Resource Site</p>
+      <h1>Where fashion and user experience come together.</h1>
+      <p class="lead">Fashion Creator UX Guide is a beginner-friendly site for students, aspiring designers, and creatives who want to understand how UX design, UX strategy, and UX scope shape fashion websites.</p>
+      <div class="button-row">
+        <a class="button primary" href="fashion-ux.html">Start Exploring</a>
+        <a class="button secondary" href="planning-tips.html">See Planning Tips</a>
       </div>
-    </section>
-
-    <section id="about" class="section light-section">
-      <div class="container narrow">
-        <h2>About the site</h2>
-        <p>
-          This site is made for young creatives who are interested in fashion, branding, and building
-          their own online presence. It explains what makes a fashion website look strong, feel clear,
-          and work well for users.
-        </p>
-      </div>
-    </section>
-
-    <section id="fashion-ux" class="section">
-      <div class="container cards-grid">
-        <article class="card">
-          <h3>What is Fashion UX?</h3>
-          <p>
-            Fashion UX is about more than style. It includes navigation, product organization,
-            visual clarity, and creating a shopping experience that feels smooth and easy.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Why it matters</h3>
-          <p>
-            If a fashion website is confusing or cluttered, users will leave quickly. Good UX helps
-            people browse, compare, and shop with confidence.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Who this helps</h3>
-          <p>
-            This guide is for students, beginners, and aspiring designers who want to learn how to make
-            fashion websites both visually appealing and easy to use.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="strategy" class="section accent-section">
-      <div class="container split-layout">
-        <div>
-          <p class="eyebrow">UX Strategy</p>
-          <h2>Planning before designing</h2>
-          <p>
-            UX strategy focuses on audience, goals, and purpose. Before building a site, it helps to ask:
-            Who is the site for? What do users need? What should they be able to do easily?
-          </p>
-        </div>
-        <div class="checklist-box">
-          <h3>Strategy questions</h3>
-          <ul>
-            <li>Who is the target audience?</li>
-            <li>What is the main goal of the site?</li>
-            <li>What should users find first?</li>
-            <li>How should the site feel visually?</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="scope" class="section">
-      <div class="container split-layout reverse">
-        <div class="image-block">site content map</div>
-        <div>
-          <p class="eyebrow">UX Scope</p>
-          <h2>Deciding what belongs on the site</h2>
-          <p>
-            UX scope is about choosing the right content and features. For a fashion website, that might
-            include product pages, brand information, clear sizing help, strong visuals, and simple navigation.
-          </p>
-          <p>
-            A good scope keeps the website useful and focused instead of overwhelming users with too much at once.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="tips" class="section light-section">
-      <div class="container">
-        <h2>Helpful starting tips</h2>
-        <div class="tips-grid">
-          <div class="tip">
-            <h3>Keep navigation simple</h3>
-            <p>Users should always know where to click next and how to return home.</p>
-          </div>
-          <div class="tip">
-            <h3>Use strong visuals carefully</h3>
-            <p>Images should support the brand without making the page feel crowded.</p>
-          </div>
-          <div class="tip">
-            <h3>Design for mobile first</h3>
-            <p>Many people browse fashion websites on their phones, so mobile matters a lot.</p>
-          </div>
-          <div class="tip">
-            <h3>Be consistent</h3>
-            <p>Typography, spacing, and color should feel connected across the whole site.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container contact-box">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2>Questions or feedback?</h2>
-          <p>
-            This form is a simple starter example for the project. It can connect to a thank-you page later.
-          </p>
-        </div>
-
-        <form class="contact-form" action="#" method="get">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Your name">
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Your email">
-
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Your question or comment"></textarea>
-
-          <button type="submit" class="button primary">Submit</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Fashion Creator UX Guide. Demo  project website.</p>
-      
     </div>
-  </footer>
+    <div class="image-panel"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20520%27%3E%0A%3Crect%20width%3D%27800%27%20height%3D%27520%27%20fill%3D%27%23f6ece8%27/%3E%0A%3Crect%20x%3D%2770%27%20y%3D%2760%27%20width%3D%27660%27%20height%3D%27400%27%20rx%3D%2724%27%20fill%3D%27%23fffaf8%27%20stroke%3D%27%23ddc9c4%27/%3E%0A%3Crect%20x%3D%27110%27%20y%3D%27110%27%20width%3D%27250%27%20height%3D%27260%27%20rx%3D%2718%27%20fill%3D%27%23ead8d5%27/%3E%0A%3Crect%20x%3D%27395%27%20y%3D%27110%27%20width%3D%27295%27%20height%3D%2724%27%20rx%3D%2712%27%20fill%3D%27%23ead8d5%27/%3E%0A%3Crect%20x%3D%27395%27%20y%3D%27155%27%20width%3D%27250%27%20height%3D%2720%27%20rx%3D%2710%27%20fill%3D%27%23f1e5e1%27/%3E%0A%3Crect%20x%3D%27395%27%20y%3D%27190%27%20width%3D%27270%27%20height%3D%2720%27%20rx%3D%2710%27%20fill%3D%27%23f1e5e1%27/%3E%0A%3Crect%20x%3D%27395%27%20y%3D%27225%27%20width%3D%27230%27%20height%3D%2720%27%20rx%3D%2710%27%20fill%3D%27%23f1e5e1%27/%3E%0A%3Crect%20x%3D%27395%27%20y%3D%27275%27%20width%3D%27160%27%20height%3D%2744%27%20rx%3D%2722%27%20fill%3D%27%23b77b7b%27/%3E%0A%3Crect%20x%3D%27570%27%20y%3D%27275%27%20width%3D%27120%27%20height%3D%2744%27%20rx%3D%2722%27%20fill%3D%27%23ffffff%27%20stroke%3D%27%23b77b7b%27/%3E%0A%3Ctext%20x%3D%27400%27%20y%3D%2792%27%20fill%3D%27%236c5454%27%20font-size%3D%2726%27%20font-family%3D%27Georgia%27%3EFashion%20website%20planning%3C/text%3E%0A%3C/svg%3E" alt="Illustration of a fashion website planning mockup"></div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container narrow center-text">
+    <h2>What this site is for</h2>
+    <p>This site is meant to help beginners understand what makes a fashion website both visually strong and easy to use. It looks at design choices through the lens of user experience, so the content stays practical and connected to real websites.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container card-grid three">
+    <article class="card">
+      <h3>Fashion UX</h3>
+      <p>Learn what user experience means in fashion websites and why it matters for shopping, browsing, and trust.</p>
+      <a href="fashion-ux.html" class="text-link">Read more</a>
+    </article>
+    <article class="card">
+      <h3>UX Strategy</h3>
+      <p>See how audience, goals, and planning shape the structure of a website before design decisions are finalized.</p>
+      <a href="ux-strategy.html" class="text-link">Read more</a>
+    </article>
+    <article class="card">
+      <h3>UX Scope</h3>
+      <p>Explore what pages, features, and content should be included on a fashion website without making it feel cluttered.</p>
+      <a href="ux-scope.html" class="text-link">Read more</a>
+    </article>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container split">
+    <div>
+      <p class="eyebrow">For beginners</p>
+      <h2>Built for students and aspiring designers</h2>
+      <p>This guide is especially helpful for people who may want to build a fashion brand site, portfolio, or boutique website someday but are still learning how layout, content, and user needs fit together.</p>
+    </div>
+    <div class="checklist">
+      <h3>Questions this site helps answer</h3>
+      <ul>
+        <li>What makes a fashion website easy to use?</li>
+        <li>What pages should a beginner include?</li>
+        <li>How much content is too much?</li>
+        <li>How should visuals support the user experience?</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 Fashion Creator UX Guide. Student project website.</p>
+    <p class="footer-note">All illustrations on this site are original placeholder graphics created for this class project. Replace with credited images if you add outside visuals.</p>
+  </div>
+</footer>
+
 </body>
 </html>
