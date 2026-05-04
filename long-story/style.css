@@ -78,35 +78,35 @@ p {
   text-align: center;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
-    url("images/lerone-pieters-g0enUw24TBI-unsplash(1).jpg");
+    url("images/lerone-pieters-g0enUw24TBI-unsplash.jpg");
 }
 
 .step-one {
   justify-content: flex-start;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)),
-    url("images/zac-ong-JHN1-mpgXjo-unsplash(1).jpg");
+    url("images/zac-ong-JHN1-mpgXjo-unsplash.jpg");
 }
 
 .step-two {
   justify-content: flex-end;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.60)),
-    url("images/lerone-pieters-g0enUw24TBI-unsplash(1).jpg");
+    url("images/lerone-pieters-g0enUw24TBI-unsplash.jpg");
 }
 
 .step-three {
   justify-content: center;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.70)),
-    url("images/zac-ong-JHN1-mpgXjo-unsplash(1).jpg");
+    url("images/zac-ong-JHN1-mpgXjo-unsplash.jpg");
 }
 
 .step-four {
   justify-content: flex-start;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.60)),
-    url("images/lerone-pieters-g0enUw24TBI-unsplash(1).jpg");
+    url("images/lerone-pieters-g0enUw24TBI-unsplash.jpg");
 }
 
 .ending {
@@ -114,7 +114,7 @@ p {
   text-align: center;
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75)),
-    url("images/zac-ong-JHN1-mpgXjo-unsplash(1).jpg");
+    url("images/zac-ong-JHN1-mpgXjo-unsplash.jpg");
 }
 
 /* Responsive support for smaller screens */
