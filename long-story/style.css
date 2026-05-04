@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: white;
+  background-color: #111111;
+}
+
+.story-container {
+  width: 100%;
+}
+
+.story-step {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 6rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.story-step::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.text-box {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  padding: 2rem;
+  background: rgba(20, 20, 20, 0.75);
+  border-left: 6px solid #f2b35d;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
+}
+
+.label {
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  font-size: 0.8rem;
+  color: #f2b35d;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0 0 1rem;
+}
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.intro {
+  justify-content: center;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.55)),
+    url("images/city-sunset.jpg");
+}
+
+.step-one {
+  justify-content: flex-start;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.65)),
+    url("images/city-night.jpg");
+}
+
+.step-two {
+  justify-content: flex-end;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.60)),
+    url("images/city-sunset.jpg");
+}
+
+.step-three {
+  justify-content: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.70)),
+    url("images/city-night.jpg");
+}
+
+.step-four {
+  justify-content: flex-start;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.60)),
+    url("images/city-sunset.jpg");
+}
+
+.ending {
+  justify-content: center;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.75)),
+    url("images/city-night.jpg");
+}
+
+/* Responsive support for smaller screens */
+@media screen and (max-width: 800px) {
+  .story-step {
+    padding: 2rem;
+    background-attachment: scroll;
+  }
+
+  .text-box {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h2 {
+    font-size: 2.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
