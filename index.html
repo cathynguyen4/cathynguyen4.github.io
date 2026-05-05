@@ -1,54 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- meta tags and title -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cathy Nguyen</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cathy Nguyen | Web Design Portfolio</title>
 
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="style.css" media="all">
-	<style>
-		/* in-file CSS here */
-	</style>
-
-	<!-- external and internal JavaScript -->
-	<script src="scripts.js" defer></script>
-	<script>
-		// in-page JavaScript here
-	</script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-	<h1>Cathy Nguyen</h1>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Cathy Nguyen</a>
 
-	<p>Exploring creativity through code.</p>
+      <ul class="nav-links">
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#tiny-projects">Tiny Projects</a></li>
+        <li><a href="#major-project">Major Project</a></li>
+        <li><a href="https://github.com/cathynguyen4/cathynguyen4.github.io" target="_blank">GitHub Repo</a></li>
+      </ul>
+    </nav>
 
-	<p>
-		<a href="https://github.com/cathynguyen4">View my GitHub Repository</a>
-	</p>
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Web Design Portfolio</p>
+        <h1>Cathy Nguyen</h1>
+        <p class="tagline">Exploring creativity through code.</p>
 
-	<h2>Activities</h2>
-	<ul>
-		<li>Activity 1 (coming soon)</li>
-		<li>Activity 2 (coming soon)</li>
-		<li>Activity 3 (coming soon)</li>
-	</ul>
+        <a class="button" href="https://github.com/cathynguyen4/cathynguyen4.github.io" target="_blank">
+          View My GitHub Repository
+        </a>
+      </div>
+    </section>
+  </header>
 
-	<h2>Tiny Projects</h2>
-	<ul>
-		<li><a href="favorite-recipe/index.html">Tiny Project 2</a></li>
+  <main>
 
-		<!-- Add TP3 links here -->
-		<li><a href="anni-albers/index.html">TP3: Layout 1 (Anni Albers)</a></li>
-		<li><a href="anni-albers/index2.html">TP3: Layout 2 (Anni Albers)</a></li>
-	</ul>
+    <section id="activities" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">Course Work</p>
+        <h2>Activities</h2>
+        <p>
+          These activities show my progress with HTML, CSS, layout, images, and responsive design.
+        </p>
+      </div>
 
-	<h2>Major Project</h2>
-	<p>
-		<a href="#">Major Project (coming soon)</a>
-	</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Starter Home Page</h3>
+          <p>My original homepage activity for organizing class links.</p>
+          <a href="index.html">View Activity</a>
+        </article>
+
+        <article class="card">
+          <h3>Pacific Rhododendron</h3>
+          <p>A reference page focused on content, images, and responsive design.</p>
+          <a href="rhododendron/">View Activity</a>
+        </article>
+
+        <article class="card">
+          <h3>Responsive Recipe</h3>
+          <p>A mobile-first recipe page using responsive CSS and media queries.</p>
+          <a href="responsive-recipe/">View Activity</a>
+        </article>
+
+        <article class="card">
+          <h3>Recipe Minisite</h3>
+          <p>A small recipe website with multiple pages and a navigation menu.</p>
+          <a href="recipe-minisite/">View Activity</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="tiny-projects" class="content-section alt-section">
+      <div class="section-heading">
+        <p class="eyebrow">Small Builds</p>
+        <h2>Tiny Projects</h2>
+        <p>
+          These projects helped me practice creative layouts, scrolling, storytelling, and page design.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Tiny Project 2: Favorite Recipe</h3>
+          <p>A recipe page built with HTML and CSS.</p>
+          <a href="favorite-recipe/">View Tiny Project</a>
+        </article>
+
+        <article class="card">
+          <h3>TP3: Layout 1</h3>
+          <p>A layout project based on Anni Albers and visual organization.</p>
+          <a href="anni-albers/index.html">View Tiny Project</a>
+        </article>
+
+        <article class="card">
+          <h3>TP3: Layout 2</h3>
+          <p>A second layout variation for the Anni Albers project.</p>
+          <a href="anni-albers/index2.html">View Tiny Project</a>
+        </article>
+
+        <article class="card">
+          <h3>Long Story</h3>
+          <p>
+            A long-scrolling visual story called <em>Chasing Golden Hour</em>.
+          </p>
+          <a href="long-story/">View Tiny Project</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="major-project" class="content-section major-section">
+      <div class="major-card">
+        <p class="eyebrow">Final Website</p>
+        <h2>Major Project</h2>
+        <p>
+          My Major Project is a community resource website that connects fashion,
+          personal style, and helpful information in one organized place. The site
+          focuses on clear navigation, useful content, and a welcoming design.
+        </p>
+
+        <a class="button" href="major-project/">View Major Project</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Designed and coded by Cathy Nguyen.</p>
+  </footer>
 
 </body>
 </html>
