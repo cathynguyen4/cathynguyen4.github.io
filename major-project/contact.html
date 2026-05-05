@@ -8,15 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
+  <div class="site-glow" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container">
       
 <nav class="navbar">
   <a class="logo" href="index.html">Fashion Creator UX Guide</a>
-  <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -35,14 +37,14 @@
   <main>
     
 <section class="page-hero">
-  <div class="container narrow">
+  <div class="container narrow reveal">
     <p class="eyebrow">Contact</p>
     <h1>Questions or feedback?</h1>
     <p class="lead">Use this form to share feedback or ask a question about the site.</p>
   </div>
 </section>
 <section class="section">
-  <div class="container form-wrap">
+  <div class="container form-wrap reveal">
     <form class="contact-form" action="thank-you.html" method="get">
       <label for="name">Name</label>
       <input id="name" name="name" type="text" required>
@@ -69,8 +71,8 @@
   
 <footer class="site-footer">
   <div class="container">
-    <p>© 2026 Fashion Creator UX Guide. Student project website.</p>
-
+    <p>© 2026 Fashion Creator UX Guide. Student project website by Cathy Nguyen.</p>
+    <p class="footer-note">Images used from Unsplash for educational project purposes: Alina Bordunova, Charlota Blunarova, and Toa Heftiba.</p>
   </div>
 </footer>
 
