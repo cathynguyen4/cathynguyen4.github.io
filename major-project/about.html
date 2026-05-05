@@ -8,15 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
+  <div class="site-glow" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container">
       
 <nav class="navbar">
   <a class="logo" href="index.html">Fashion Creator UX Guide</a>
-  <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -35,16 +37,21 @@
   <main>
     
 <section class="page-hero">
-  <div class="container narrow">
+  <div class="container narrow reveal">
     <p class="eyebrow">About the Community</p>
     <h1>Who this website is for</h1>
     <p class="lead">This site is designed for young creatives who are interested in fashion, branding, digital design, and building their own website in the future.</p>
   </div>
 </section>
 <section class="section">
-  <div class="container narrow">
-    <p>The main audience for this site is college-aged students and beginner creatives who care about visual design but are still learning about the planning side of website creation. Many people in this group may want to create a portfolio, small brand site, or online store someday. They usually want a site that feels stylish, clear, and easy to use.</p>
-    <p>One persona for this site is a student designer who pays attention to branding and online presentation but does not yet know how UX strategy and scope shape a successful website. She wants practical guidance, examples, and ideas she can actually use when planning her own future project.</p>
+  <div class="container split">
+    <div class="reveal">
+      <p>The main audience for this site is college-aged students and beginner creatives who care about visual design but are still learning about the planning side of website creation. Many people in this group may want to create a portfolio, small brand site, or online store someday. They usually want a site that feels stylish, clear, and easy to use.</p>
+      <p>One persona for this site is a student designer who pays attention to branding and online presentation but does not yet know how UX strategy and scope shape a successful website. She wants practical guidance, examples, and ideas she can actually use when planning her own future project.</p>
+    </div>
+    <div class="image-panel reveal hover-lift">
+      <img src="images/vogue-storefront.jpg" alt="Fashion magazine storefront display">
+    </div>
   </div>
 </section>
 
@@ -52,8 +59,9 @@
   
 <footer class="site-footer">
   <div class="container">
-    <p>© 2026 Fashion Creator UX Guide. Student project website.</p>
-   
+    <p>© 2026 Fashion Creator UX Guide. Student project website by Cathy Nguyen.</p>
+    <p class="footer-note">Images used from Unsplash for educational project purposes: Alina Bordunova, Charlota Blunarova, and Toa Heftiba.</p>
+  </div>
 </footer>
 
 </body>
