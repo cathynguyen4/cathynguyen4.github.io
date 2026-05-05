@@ -8,15 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
+  <div class="site-glow" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container">
       
 <nav class="navbar">
   <a class="logo" href="index.html">Fashion Creator UX Guide</a>
-  <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -35,7 +37,7 @@
   <main>
     
 <section class="page-hero">
-  <div class="container narrow">
+  <div class="container narrow reveal">
     <p class="eyebrow">UX Scope</p>
     <h1>Choosing the right content and features</h1>
     <p class="lead">Scope is about deciding what belongs on the site and what should be left out to keep it useful and clear.</p>
@@ -43,15 +45,15 @@
 </section>
 <section class="section">
   <div class="container card-grid three">
-    <article class="card">
+    <article class="card reveal hover-lift">
       <h3>Must-have content</h3>
       <p>Homepage, about page, clear navigation, contact area, brand information, and key pages users expect.</p>
     </article>
-    <article class="card">
+    <article class="card reveal hover-lift">
       <h3>Helpful features</h3>
       <p>Organized menus, readable layouts, mobile-friendly structure, product details, and easy ways to move through the site.</p>
     </article>
-    <article class="card">
+    <article class="card reveal hover-lift">
       <h3>What to avoid</h3>
       <p>Too many extra sections, cluttered layouts, repetitive content, or features that look nice but do not help the user.</p>
     </article>
@@ -62,8 +64,8 @@
   
 <footer class="site-footer">
   <div class="container">
-    <p>© 2026 Fashion Creator UX Guide. Student project website.</p>
-
+    <p>© 2026 Fashion Creator UX Guide. Student project website by Cathy Nguyen.</p>
+    <p class="footer-note">Images used from Unsplash for educational project purposes: Alina Bordunova, Charlota Blunarova, and Toa Heftiba.</p>
   </div>
 </footer>
 
