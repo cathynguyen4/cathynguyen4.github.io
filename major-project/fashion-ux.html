@@ -8,15 +8,17 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
+  <div class="site-glow" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container">
       
 <nav class="navbar">
   <a class="logo" href="index.html">Fashion Creator UX Guide</a>
-  <button class="menu-toggle" aria-label="Toggle navigation" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -35,7 +37,7 @@
   <main>
     
 <section class="page-hero">
-  <div class="container narrow">
+  <div class="container narrow reveal">
     <p class="eyebrow">Fashion UX</p>
     <h1>What is fashion UX?</h1>
     <p class="lead">Fashion UX is the experience people have when they browse, shop, and interact with a fashion website.</p>
@@ -43,17 +45,19 @@
 </section>
 <section class="section">
   <div class="container split">
-    <div>
+    <div class="reveal">
       <h2>More than just visuals</h2>
       <p>A fashion website can look beautiful and still be hard to use. Good fashion UX means users can move through the site easily, understand the products, trust the brand, and complete what they came to do.</p>
       <p>This includes navigation, page layout, readability, product organization, image use, and mobile responsiveness.</p>
     </div>
-    <div class="image-panel"><img src="data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20420%27%3E%0A%3Crect%20width%3D%27800%27%20height%3D%27420%27%20fill%3D%27%23fbf5f2%27/%3E%0A%3Crect%20x%3D%2770%27%20y%3D%2750%27%20width%3D%27660%27%20height%3D%27320%27%20rx%3D%2722%27%20fill%3D%27%23fff%27%20stroke%3D%27%23dfd0ca%27/%3E%0A%3Crect%20x%3D%27110%27%20y%3D%2795%27%20width%3D%27180%27%20height%3D%27210%27%20rx%3D%2714%27%20fill%3D%27%23ecdeda%27/%3E%0A%3Crect%20x%3D%27320%27%20y%3D%2795%27%20width%3D%27180%27%20height%3D%27210%27%20rx%3D%2714%27%20fill%3D%27%23f3e9e5%27/%3E%0A%3Crect%20x%3D%27530%27%20y%3D%2795%27%20width%3D%27160%27%20height%3D%27210%27%20rx%3D%2714%27%20fill%3D%27%23ecdeda%27/%3E%0A%3Ctext%20x%3D%27145%27%20y%3D%27205%27%20fill%3D%27%236c5454%27%20font-size%3D%2722%27%20font-family%3D%27Georgia%27%3EAudience%3C/text%3E%0A%3Ctext%20x%3D%27362%27%20y%3D%27205%27%20fill%3D%27%236c5454%27%20font-size%3D%2722%27%20font-family%3D%27Georgia%27%3EContent%3C/text%3E%0A%3Ctext%20x%3D%27570%27%20y%3D%27205%27%20fill%3D%27%236c5454%27%20font-size%3D%2722%27%20font-family%3D%27Georgia%27%3EVisuals%3C/text%3E%0A%3C/svg%3E" alt="Diagram showing audience, content, and visuals"></div>
+    <div class="image-panel reveal float-card">
+      <img src="images/fashion-sketches.jpg" alt="Fashion sketches pinned on a wall">
+    </div>
   </div>
 </section>
 <section class="section alt">
   <div class="container card-grid two">
-    <article class="card">
+    <article class="card reveal hover-lift">
       <h3>Examples of good fashion UX</h3>
       <ul>
         <li>Clear category labels</li>
@@ -62,7 +66,7 @@
         <li>Fast mobile browsing</li>
       </ul>
     </article>
-    <article class="card">
+    <article class="card reveal hover-lift">
       <h3>Examples of weak fashion UX</h3>
       <ul>
         <li>Confusing navigation</li>
@@ -78,8 +82,8 @@
   
 <footer class="site-footer">
   <div class="container">
-    <p>© 2026 Fashion Creator UX Guide. Student project website.</p>
-
+    <p>© 2026 Fashion Creator UX Guide. Student project website by Cathy Nguyen.</p>
+    <p class="footer-note">Images used from Unsplash for educational project purposes: Alina Bordunova, Charlota Blunarova, and Toa Heftiba.</p>
   </div>
 </footer>
 
