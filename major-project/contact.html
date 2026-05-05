@@ -1,3 +1,4 @@
+file that correctly connects to your thank-you.html page:
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,74 +12,77 @@
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <div class="site-glow" aria-hidden="true"></div>
+
   <header class="site-header">
     <div class="container">
-      
-<nav class="navbar">
-  <a class="logo" href="index.html">Fashion Creator UX Guide</a>
-  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="fashion-ux.html">Fashion UX</a></li>
-    <li><a href="ux-strategy.html">UX Strategy</a></li>
-    <li><a href="ux-scope.html">UX Scope</a></li>
-    <li><a href="planning-tips.html">Planning Tips</a></li>
-    <li><a href="examples.html">Examples</a></li>
-    <li><a href="branding.html">Branding</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
+      <nav class="navbar">
+        <a class="logo" href="index.html">Fashion Creator UX Guide</a>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
 
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="fashion-ux.html">Fashion UX</a></li>
+          <li><a href="ux-strategy.html">UX Strategy</a></li>
+          <li><a href="ux-scope.html">UX Scope</a></li>
+          <li><a href="planning-tips.html">Planning Tips</a></li>
+          <li><a href="examples.html">Examples</a></li>
+          <li><a href="branding.html">Branding</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
+
   <main>
-    
-<section class="page-hero">
-  <div class="container narrow reveal">
-    <p class="eyebrow">Contact</p>
-    <h1>Questions or feedback?</h1>
-    <p class="lead">Use this form to share feedback or ask a question about the site.</p>
-  </div>
-</section>
-<section class="section">
-  <div class="container form-wrap reveal">
-    <form class="contact-form" action="thank-you.html" method="get">
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text" required>
+    <section class="page-hero">
+      <div class="container narrow reveal">
+        <p class="eyebrow">Contact</p>
+        <h1>Share a question or idea</h1>
+        <p class="lead">
+          Have a fashion website idea, branding question, or UX concern? Use this form to share your thoughts.
+        </p>
+      </div>
+    </section>
 
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" required>
+    <section class="section">
+      <div class="container narrow">
+        <form class="contact-form card reveal" action="thank-you.html" method="get">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
 
-      <label for="topic">Topic</label>
-      <select id="topic" name="topic">
-        <option>General feedback</option>
-        <option>Website question</option>
-        <option>Design idea</option>
-      </select>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required>
 
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="6" required></textarea>
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option value="fashion-ux">Fashion UX</option>
+            <option value="branding">Branding</option>
+            <option value="website-planning">Website Planning</option>
+            <option value="other">Other</option>
+          </select>
 
-      <button class="button primary" type="submit">Submit</button>
-    </form>
-  </div>
-</section>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
 
+          <button class="button primary" type="submit">Submit Message</button>
+        </form>
+      </div>
+    </section>
   </main>
-  
-<footer class="site-footer">
-  <div class="container">
-    <p>© 2026 Fashion Creator UX Guide. Student project website by Cathy Nguyen.</p>
-    <p class="footer-note">
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Fashion Creator UX Guide. Student project website by Cathy Nguyen.</p>
+      <p class="footer-note">
         Images used from Unsplash for educational project purposes: Alina Bordunova,
         Charlota Blunarova, and Toa Heftiba.
       </p>
-
-  </div>
-</footer>
-
+    </div>
+  </footer>
 </body>
 </html>
